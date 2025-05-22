@@ -10,6 +10,7 @@ class ModuleManager:
 
     def load_modules(self):
         print("--- Loading modules ---")
+        #Piszę żeby zobaczyć czy dizała w PyCharm pushowanie zmian na gita
         if not os.path.exists(os.path.join(MODULES_DIR, "__init__.py")):
             print(f"Warning: __init__.py file missing in folder '{MODULES_DIR}'. Creating file...")
             with open(os.path.join(MODULES_DIR, "__init__.py"), "w") as f:
